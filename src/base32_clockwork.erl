@@ -4,7 +4,7 @@
 
 -import(base32_utils, [rev_bits_list_to_binary/1, bits_list_size/1]).
 
--spec encode(binary()) -> binary().
+-spec encode(iolist()) -> binary().
 encode(Data) ->
     encode0(Data, []).
 
